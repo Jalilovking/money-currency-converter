@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <h1 class="header">Money currency convertor</h1>
+    <div class="container">
+        
+        <form id="form">
+            <ul class="list">
+                <li class="list__item">
+                    <label class="list__label" for="input">Amount</label><br><br>
+                    <input width="350" class="list__input" id="input" name="input" type="text" placeholder="1.00">
+                </li>
+                <li class="list__item">
+                    <label class="list__label" for="fromSelect">From</label><br><br>
+                    <select class="list__select" disabled id="fromSelect">
+                        <option selected value="default">UZS - <span class="list__span">Uzbek sum</span></option>
+                    </select>
+                </li>
+                <li class="list__item">
+                    <label class="list__label" for="toSelect">To</label><br><br>
+                    <select class="list__select" id="toSelect">
+                        <option value="toUsd">USD - <span class="list__span">US Dollar</span></option>
+                        <option value="toRub">RUB - <span class="list__span">Russian Ruble</span></option>
+                        <option value="toEur">EUR - <span class="list__span">Euro</span></option>
+                        <option value="toGbp">GBP - <span class="list__span">British Pound</span></option>
+                        <option value="toJpy">JPY - <span class="list__span">Japanese Yen</span></option>
+                        <option value="toChf">CHF - <span class="list__span">Swiss Frank</span></option>
+                    </select>
+                </li>
+            </ul>
+            <button class="btn" type="submit">Convert</button>
+        </form>
+        <h2 class="result">$ <span id="text">0.00</span></h2>
+    </div>
+    
+    <script src="./script.js"></script>
+</body>
+</html>
